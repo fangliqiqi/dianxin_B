@@ -1,0 +1,167 @@
+.tableRow {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #E7E7E7;
+  }
+}
+
+.tables {
+  min-height: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.tablesDirver {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      height: 55px;
+      width: 1px;
+      top: 36px;
+      right: 0;
+      background: #E6E6E6;
+    }
+  }
+}
+
+
+
+.propressContainer {
+  margin-top: 40px;
+
+  .processLayout {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // position: relative;
+
+    .divider {
+      // position: absolute;
+      width: 100%;
+      height: 100%;
+
+      .divider1 {
+        position: relative;
+        width: 100%;
+
+        &:after {
+          position: absolute;
+          content: '';
+          left: 116px;
+          top: 12px;
+          width: calc(50% - 132px);
+          height: 2px;
+          background: #E7E7E7;
+        }
+
+        &.select {
+          &:after {
+            background: #2E77F3;
+          }
+        }
+      }
+
+      .divider2 {
+        position: relative;
+        width: 100%;
+
+        &:after {
+          position: absolute;
+          content: '';
+          left: calc(50% + 16px);
+          top: 12px;
+          width: calc(50% - 132px);
+          height: 2px;
+          background: #E6E6E6;
+        }
+
+        &.select {
+          &:after {
+            background: #2E77F3;
+          }
+        }
+      }
+
+    }
+
+    .processItemBox {
+      display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    }
+
+  }
+}
+
+
+
+:global {
+  // 修改进度条上方显示的分段标题样式
+  .processWrap {
+    .ant-radio-button-wrapper{
+      color: #969696;
+      height: 36px;
+      line-height: 34px;
+      padding: 0 17px;
+      border: 1px solid #E6E6E6;
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  }
+}
+
+.processItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding-bottom: 20px;
+  color: #969696;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    font-size:24px;
+    height: 24px;
+    color: #E6E6E6;
+
+    &.select{
+      color: #2E77F3;
+    }
+  }
+
+  .title {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 16px;
+
+    &.select {
+      color: #323232;
+    }
+  }
+
+  .time {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+
+
+}

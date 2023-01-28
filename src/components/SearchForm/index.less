@@ -1,0 +1,42 @@
+.filterContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0px 24px;
+  .filterItem {
+    background-color: #F7F7F7;
+    border: 1px solid #C8C8C8;
+    border-radius: 16px;
+    padding: 5px 8px 5px 20px;
+    margin-top: 25px;
+    
+    .filterText {
+      color: #646464;
+    }
+
+    .btnClose {
+      margin-left: 10px;
+      &:hover{
+        color: #1890ff;
+      }
+    }
+
+    &:not(:first-child){
+      margin-left: 15px;
+    }
+
+    .userNameItem {
+      color: #C8C8C8;
+      .filterText {
+        margin: 0 5px;
+      }
+    }
+  }
+  
+}
+
+.btnGuster{
+  margin-right: 10px;
+}

@@ -1,0 +1,53 @@
+.container {
+  width: 100%;
+  // height: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.wrapBox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.showContentBox {
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  width: 1200px;
+  background-color: #F7F7F7;
+  margin-top: 70px;
+}
+
+:global {
+  // 布局的上下左右间距
+  .ant-pro-basicLayout-content {
+    margin: 24px 24px 0 24px;
+  }
+
+  .ant-layout-content .ant-row {
+    height: 100%;
+  }
+
+  .ant-tabs-top > .ant-tabs-nav{
+    margin: 0 ;
+  }
+}
+
+.tabLayout {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #E6E6E6;
+  }
+
+}

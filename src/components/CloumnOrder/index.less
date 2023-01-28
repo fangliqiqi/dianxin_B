@@ -1,0 +1,80 @@
+@titleColor:#969696;
+@valueColor:#333;
+
+.rowTitle {
+  color: @titleColor;
+}
+
+.textCenter {
+  width: calc(50% - 40px);
+  display: inline-block;
+  text-align: right;
+  color: @titleColor;
+  flex: 1;
+}
+.rightTxt{
+  width: 300px;
+}
+.textLeft {
+  display: inline-block;
+  width: 90px;
+  color: @titleColor;
+  flex-shrink: 0;
+}
+.labelTxt{
+  width: calc(25% - 60px);
+  text-align: right;
+  color: @titleColor;
+}
+.valuetxt{
+  color: @valueColor;
+  width: 80%;
+  margin-left: 48px;
+}
+
+.textRight {
+  display: inline-block;
+  width: 90px;
+  color: @titleColor;
+  text-align: right;
+}
+
+.descWrap {
+  background-color: #F7F7F7;
+  box-sizing: border-box;
+  padding: 27px 34px;
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  color: @valueColor;
+  p{
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.statusLabel {
+  font-size: 24px;
+  color: #2E77F3;
+  font-weight: 500;
+  margin: 34px 0 18px;
+}
+
+:global {
+.antRowContainer .ant-row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+  .antRowContainer .ant-space-vertical{ // 描述等样式
+    width: 100%;
+    margin-top: 18px;
+  }
+  .antRowContainer .ant-col.ant-col-12,.antRowContainer .ant-col-8,.antRowContainer .ant-col-6 {
+    text-align: left;
+    
+    span:nth-child(2){
+      color: @valueColor;
+      margin-left: 40px;
+    }
+  }
+}

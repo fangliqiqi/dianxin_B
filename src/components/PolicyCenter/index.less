@@ -1,0 +1,65 @@
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 32px;
+  background: white;
+  padding-bottom: 20px;
+
+  .header {
+    .flex-row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    h4{
+      margin-bottom: 0;
+    }
+
+    .title {
+      color: #323232;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .moreBtn {
+      color: #2E77F3;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .item {
+    cursor: pointer;
+    .header;
+    margin: 4px 0 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    .title {
+      color: #646464;
+      font-size: 12px;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .time {
+      color: #C8C8C8;
+      font-size: 12px;
+      flex-shrink: 0;
+      margin-left: 10px;
+    }
+  }
+}

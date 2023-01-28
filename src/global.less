@@ -1,0 +1,193 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #F7F7F7;
+}
+
+.contentBox {
+  width: 1200px;
+  background-color: white;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+// .ant-layout {
+  // min-height: 100vh;
+// }
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  color: #323223;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+
+  .ant-picker-input > input{
+    height: 30px !important;
+    background: yellow;
+  }
+  .ant-picker {
+    padding:  0 11px !important;
+  }
+}
+
+.ant-layout {
+  background: #F7F7F7 !important;
+  min-height: 100vh;
+}
+
+// 所有表格头部样式
+// .ant-table-thead>tr>th {
+//   background: white !important;
+//   border-top: 1px solid #e6e6e6;
+//   color: #969696 !important;
+//   font-weight: normal !important;
+// }
+
+// .ant-table {
+//   color: #323232 !important;
+// }
+
+// 所有表格行高
+// .ant-table.ant-table-middle .ant-table-tbody>tr>td {
+//   padding: 17px 8px !important;
+//   border-bottom: 1px solid #e6e6e6;
+// }
+
+// .ant-table.ant-table-middle .ant-table-thead>tr>th {
+//   padding: 16px 8px !important;
+//   border-bottom: 1px solid #e6e6e6;
+// }
+
+// 操作列是向右箭头 列表的最后一个操作列，文字居右显示
+.arrowListTable {
+  .ant-table.ant-table-middle .ant-table-tbody>tr>td {
+    padding: 23px 8px !important;
+  }
+
+  .ant-table-tbody>tr>td:last-child {
+    text-align: right;
+  }
+}
+
+// 列表展开的布局样式
+.ant-table-expanded-row {
+
+  //表头
+  .ant-table-thead>tr>th {
+    background: #fbfbfb !important;
+    border-bottom: none !important;
+    border-top: none;
+    color: #969696;
+  }
+
+  .ant-table-tbody>tr>td {
+    border-bottom: none !important;
+    color: #323232;
+  }
+
+  // 总结栏下边框
+  .ant-table tfoot>tr>td {
+    border-bottom: none;
+  }
+
+  // 总结栏padding
+  .ant-table.ant-table-middle tfoot>tr>td {
+    padding: 20px 8px 12px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.06);
+    color: #323232;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ant-table-container {
+    background-color: #FAFAFA;
+  }
+}
+
+.gesture {
+  cursor: pointer;
+}
+.xscroll{
+  .ant-table-container{
+    width: calc(100vw - 300px);
+    overflow-x: scroll;
+  }
+}
+.xscrollbar{
+  .ant-table-container{
+    width: calc(100vw - 620px);
+    overflow-x: scroll;
+  }
+}
+// 下拉选择器的自定义图标点击事件
+.ant-select-arrow .anticon:not(.ant-select-suffix) {
+  pointer-events: none !important;
+}
+.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+  background: #222;
+  padding-left: 7px;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub,.ant-menu-item:not(.ant-menu-item-selected) > span > a{
+  color: #969696;
+}
+.ant-menu-dark.ant-menu-dark .ant-menu-item{
+  margin: 0;
+}
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  color: #fff;
+  margin: 0;
+}
+
+.searchForm{
+  .ant-col-6:last-child{
+    min-width: 236px;
+  }
+}

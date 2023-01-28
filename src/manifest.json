@@ -1,0 +1,8 @@
+{
+  "name": "皖信人力",
+  "short_name": "人力",
+  "display": "standalone",
+  "start_url": "./?utm_source=homescreen",
+  "theme_color": "#002140",
+  "background_color": "#323232",
+}

@@ -1,0 +1,60 @@
+.editUser {
+
+
+  .roleGroup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pageHeader {
+    position: relative;
+    padding-bottom: 30px;
+    &.divider::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background: #E6E6E6;
+    } 
+  }
+}
+.accountContainer .ant-spin-container{
+  margin-top: 25px;
+}
+
+.select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .title {
+    margin-right: 16px !important;
+    width: auto !important;
+    color: #646464 !important;
+  }
+}
+
+.pagination {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 新建账号点击弹出的对话框样式调整
+:global {
+  .accountDialog {
+    // 头部
+    .ant-modal-content .ant-modal-header {
+      padding: 40px;
+      text-align: center;
+      .ant-modal-title {
+        color: #4A4A4A;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+  }
+}

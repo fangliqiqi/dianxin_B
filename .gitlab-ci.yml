@@ -1,0 +1,29 @@
+sonar_preview:
+  stage: test
+  script:
+    - sh  ci/sonar_preview.sh
+  except:
+    - master
+  tags:
+    - hr-b
+
+auto_test:
+  stage: test
+  script:
+    - sh  ci/auto_test.sh
+  only:
+    - master
+  tags:
+    - hr-b
+
+sonar_analyze:
+  stage: test
+  script:
+    - sh ci/sonar_analyze.sh
+  only:
+    - master
+  tags:
+    - hr-b
+
+
+

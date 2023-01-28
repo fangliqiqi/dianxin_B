@@ -1,0 +1,159 @@
+
+.archivesContainer {
+  .warn {
+    margin-top: 20px;
+    width: 100%;
+    height: 36px;
+    background: rgba(255, 110, 76, 0.08);
+    border: 1px solid rgba(255, 110, 76, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #969696;
+    font-size: 14px;
+  }
+
+}
+
+.certContainer{
+  background: #fff;
+  margin-top:50px;
+  padding: 0px 40px 0px;
+  .row{
+    height: 68px;
+    line-height: 68px;
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: #323232;
+    font-size: 16px;
+  }
+  :global {
+    .ant-upload-list-picture-card-container{
+      width: 250px;
+      height: 250px;
+    }
+    .ant-tag{
+      font-size: 14px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+    .ant-tabs{
+      margin-top: 20px;
+    }
+    .ant-tabs-nav::before{
+      border-bottom: none;
+    }
+  }
+  .picList{
+    padding: 0px 40px 0px;
+  }
+  .tagRow{
+    padding: 20px 0px 0px;
+  }
+  
+  
+}
+
+.mPayContainer{
+  padding-bottom: 0 !important;
+  min-height: calc(100vh - 176px);
+}
+
+.mpayRevenueTime {
+  width: 100%;
+  height: 61px;
+  position: relative;
+
+  .text {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 40px;
+    font-size: 14px;
+    color: #969696;
+    align-items: center;
+
+    .time {
+      color: #323232;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-top: 1px dashed #E6E6E6;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+  }
+
+}
+
+// 统计数据上的数据显示
+.staticBox {
+  font-weight: bold;
+}
+
+:global{
+  .gesture{
+    .ant-card-body{
+      padding:0px !important;
+    }
+  }
+  // 社保公积金首页列表的最后一个操作列，文字居右显示
+  .monthListTable .ant-table-tbody > tr > td:last-child {
+    text-align: right;
+  }
+  .ant-table-expanded-row{
+    .ant-table-thead > tr > th{
+      border-bottom: none;
+      color: #969696;
+    }
+    .ant-table-tbody > tr > td {
+      border-bottom: none;
+      color: #323232;
+    }
+
+    // 总结栏下边框
+    .ant-table tfoot > tr > td{ 
+      border-bottom: none;
+    }
+    // 总结栏padding
+    .ant-table.ant-table-middle tfoot > tr > td{
+      padding: 20px 8px 12px;
+      border-top: 1px dashed rgba(0, 0, 0, 0.06);
+      color: #323232;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    
+    .expendContainer .ant-table-thead > tr > th {
+      background: none;
+      border-top:none;
+    }
+    .ant-table-container {
+      background-color: #FAFAFA;
+    }
+  }
+
+  .lizhiTable .ant-table-thead > tr > th{
+    background: #FAFAFA !important;
+    }
+}
+
+.expendContainer {
+  box-sizing: border-box;
+  padding:0px 40px 16px;
+}
+
+.areaContainer{
+  display: flex;
+  flex-direction: row;
+}
+

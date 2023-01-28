@@ -1,0 +1,92 @@
+// 查看更多的政策列表
+.boxWrap {
+  background-color: white;
+  padding: 35px 40px 0;
+  margin-top: 20px;
+  .spareLine {
+    width: 100%;
+    height: 1px;
+    background: #E6E6E6;
+    margin-top: 27px;
+  }
+  .dateLabel {
+    color: #969696;
+  }
+}
+
+// 政策管理-编辑
+.editContentWrap {
+  box-sizing: border-box;
+  padding: 60px 90px;
+  .areaContentWrap {
+    min-width: 300px;
+    max-width: 100%;
+  }
+}
+
+// 政策管理首页
+.boxContainer {
+  box-sizing: border-box;
+  padding-top: 24px;
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-top: 24px;
+  }
+  .titleWrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .dateText {
+    color: #969696;
+    font-size: 14px;
+  }
+  .titleText {
+    color: #323232;
+    font-size: 14px;
+  }
+}
+
+// 政策详情
+.detailHeader{
+  color: #9B9B9B;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+}
+
+:global {
+  .policyContainer {
+    .ant-table-row .ant-table-cell:last-child {
+      text-align: right; 
+    }
+    table {
+      table-layout: fixed !important;
+      .titleWrap {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .editorElem-menu .w-e-menu{
+    padding: 10px !important;
+  }
+
+  // 编辑政策，formItem标题的宽度
+  .ant-form-item-label {
+    width: 100px;
+  }
+  // 区域选择的城市选择
+  .mylabel {
+    margin-bottom: 36px;
+    .ant-space-item:last-child {
+      flex-grow: 1;
+    }
+  }
+  .ant-row.ant-form-item.area {
+    align-items: center;
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  box-sizing: border-box;
+  // padding: 20px 20px 40px;
+  text-align: center;
+}
+.number {
+  color: #FF6E4C;
+  text-decoration: underline;
+  padding: 0 5px;
+}
+
+.spareLine {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  clear: both;
+  width: 100%;
+  min-width: 100%;
+}
+
+.filterContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  margin-top: 25px;
+  .filterItem {
+    background-color: #F7F7F7;
+    border: 1px solid #C8C8C8;
+    border-radius: 16px;
+    padding: 5px 8px 5px 20px;
+    .filterText {
+      margin-right: 10px;
+    }
+
+    .btnClose {
+      &:hover{
+        color: #1890ff;
+      }
+    }
+  }
+}
+
+.colBg{
+  background:#FAFAFA
+}

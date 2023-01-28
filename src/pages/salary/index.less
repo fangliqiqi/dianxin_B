@@ -1,0 +1,53 @@
+
+.columns {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.rows {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+// 薪酬二级页面
+.blankContent {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: white;
+  margin-top: 20px;
+  .cusToolbar {
+    width: 100%;
+    height: 68px;
+    background-color: white;
+    .rows;
+  }
+}
+
+// 薪酬三级页面
+.projectWrap {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 40px;
+  margin-top: 20px;
+  .headerStatics {
+    border-top: 1px solid #f0f0f0;
+    padding-bottom: 30px;
+  }
+  .statisticRow {
+    justify-content: center;
+    background-color: #F7F7F7;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    padding: 50px 0;
+    
+  }
+}
+
+:global {
+  // 业务项目带省略号的列的文字颜色
+  .ant-typography {
+    color: #323232 ;
+  }
+}
